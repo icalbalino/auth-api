@@ -47,9 +47,8 @@ jobs:
           git pull origin master
           npm install
           npm run migrate up
-          npm run test
+          npm run stop
           npm run start
-          npm run stopped
         env:
           CI: true
           HOST: localhost
