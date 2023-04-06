@@ -37,19 +37,13 @@ jobs:
           --health-retries 5
  
     steps:
-    # - name: SSH and deploy app
-      # uses: appleboy/ssh-action@master
       - uses: actions/checkout@v2
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-          # host: ${{ secrets.SSH_HOST }}
-          # username: ${{ secrets.SSH_USERNAME }}
-          # key: ${{ secrets.SSH_KEY }}
-          # port: ${{ secrets.SSH_PORT }}
       - name: npm install migrate and pull
-        script: |
+        run: |
           git pull origin master
           npm install
           npm run migrate up
