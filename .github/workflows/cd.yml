@@ -43,7 +43,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: npm install migrate and pull
-        script: |
+        run: |
           git pull origin master
           npm install
           npm run migrate up
