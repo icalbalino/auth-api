@@ -13,11 +13,11 @@ jobs:
     - name: SSH and deploy app
       uses: appleboy/ssh-action@master
       with:
-        host: localhost
-        username: postgres
-        password: if0balino
+        # host: localhost
+        # username: postgres
+        # password: if0balino
         key: ${{ secrets.SSH_KEY }}
-        port: 5432
+        port: 22
         script: |
           git pull origin master
           npm install
