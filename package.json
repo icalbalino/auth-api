@@ -7,7 +7,7 @@
     "start": "node src/app.js",
     "stop": "echo 'Stopping server' && timeout 10 && taskkill /IM node.exe /F",
     "start:dev": "nodemon src/app.js",
-    "restart": "npm run stop && timeout /t 5 && npm run start:dev",
+    "restart": "echo 'Hello, World! \nFinishing the script.'",
     "test": "jest --setupFiles dotenv/config",
     "test:watch": "jest --watchAll --coverage --setupFiles dotenv/config",
     "migrate": "node-pg-migrate",
