@@ -14,9 +14,9 @@ jobs:
       uses: appleboy/ssh-action@master
       with:
         host: localhost
-        username: icalbalino
+        username: ubuntu
         key: ${{ secrets.SSH_KEY }}
-        port: 22
+        port: 5000
         script: |
           git pull origin master
           npm install
