@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/app.js",
-    "stop": "echo 'Stopping server' && timeout /t 10 && taskkill /IM node.exe /F",
+    "stop": "echo 'Stopping server' && timeout 10 && taskkill /IM node.exe /F",
     "start:dev": "nodemon src/app.js",
     "restart": "npm run stop && timeout /t 5 && npm run start:dev",
     "test": "jest --setupFiles dotenv/config",
