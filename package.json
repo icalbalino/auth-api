@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/app.js",
-    "stop": "echo 'Stopping server' && timeout /t 5 && taskkill /IM node.exe /F",
+    "stop": "echo 'Stopping server' && timeout /t 120 && taskkill /IM node.exe /F",
     "start:dev": "nodemon src/app.js",
-    "restart": "npm run stop && timeout /t 5 && npm run start:dev",
+    "restart": "npm run stop && timeout /t 120 && npm run start:dev",
     "test": "jest --setupFiles dotenv/config",
     "test:watch": "jest --watchAll --coverage --setupFiles dotenv/config",
     "migrate": "node-pg-migrate",
