@@ -4,3 +4,4 @@ node_modules
 package-lock.json
 auth-api-app-server.pem
 config/database/test.json
+test1.txt
