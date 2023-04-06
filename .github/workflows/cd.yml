@@ -13,9 +13,9 @@ jobs:
     - name: SSH and deploy app
       uses: appleboy/ssh-action@master
       with:
-        host: localhost
-        username: ubuntu
-        key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDPlEO54VN4p+vGH+zd9sOCpJ+aAO1x7kejSrIGk6u26i5jznFWPY6daolbZwHcIO6Tm3p31Zpfjls37AvAEDplGROzMu+CgFo34LSkXxqIrMyVF0uZQPOU3rYRFokFAoovRb1sYM3z4J9SM+XBkqtGHivzHrHhrjowA/fnVjMuljLYI0cMcLXMbgjR+areAMiyoOyzLP5K0CKvlLd2+thcBP5l9zfg8Q7EXGG1mcBGmuAhj36m2TDQoRQJZ57yXnCSKcekcz/N4CyA01HuTwtGsS652sTtBq44CgbRH0h4S0Zu24ABCnnh8DO8xL8Y2LTVmDltnfKJxPpMlgQRduzDK8dYbL6MNx0iE2Rs7G59p3cvP/GnsAGi3tVNvIfQ/tt0FNkbnn7tWjzaHj7sXHrfPK6uVMW6TZ9XhO3YLn3/2k6tSG5xsSK4yIYuOrhWkkO8yP2D9YRzLPW9kHXSsFwsnlCfUHg8QpiqGdJ2tUDRw75d4WMfakg+naE93c/FKZVD1hmXvz7pfPbc8wAygFekvQmmvTZiNb/q5ImMKX3K8JwpXsfEQMmv176z6YaVKJ7EdOZCOGW/Ywc/oDp9vkKN7k5kY9S8GvK/XnRVN3Ki/41uMlMcWtAx4zSftkkq2U/GLQvtgYGcEX6SPRfZgoyif4/YfEBg+GhgP+yYtvJPTw== balino.ical@gmail.com
+        host: "github.com,20.205.243.166"
+        username: icalbalino
+        key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDPlEO54VN4p+vGH+zd9sOCpJ+aAO1x7kejSrIGk6u26i5jznFWPY6daolbZwHcIO6Tm3p31Zpfjls37AvAEDplGROzMu+CgFo34LSkXxqIrMyVF0uZQPOU3rYRFokFAoovRb1sYM3z4J9SM+XBkqtGHivzHrHhrjowA/fnVjMuljLYI0cMcLXMbgjR+areAMiyoOyzLP5K0CKvlLd2+thcBP5l9zfg8Q7EXGG1mcBGmuAhj36m2TDQoRQJZ57yXnCSKcekcz/N4CyA01HuTwtGsS652sTtBq44CgbRH0h4S0Zu24ABCnnh8DO8xL8Y2LTVmDltnfKJxPpMlgQRduzDK8dYbL6MNx0iE2Rs7G59p3cvP/GnsAGi3tVNvIfQ/tt0FNkbnn7tWjzaHj7sXHrfPK6uVMW6TZ9XhO3YLn3/2k6tSG5xsSK4yIYuOrhWkkO8yP2D9YRzLPW9kHXSsFwsnlCfUHg8QpiqGdJ2tUDRw75d4WMfakg+naE93c/FKZVD1hmXvz7pfPbc8wAygFekvQmmvTZiNb/q5ImMKX3K8JwpXsfEQMmv176z6YaVKJ7EdOZCOGW/Ywc/oDp9vkKN7k5kY9S8GvK/XnRVN3Ki/41uMlMcWtAx4zSftkkq2U/GLQvtgYGcEX6SPRfZgoyif4/YfEBg+GhgP+yYtvJPTw== balino.ical@gmail.com"
         port: 22
         script: |
           git pull origin master
