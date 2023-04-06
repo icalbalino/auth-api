@@ -16,7 +16,7 @@ jobs:
         host: "github.com,20.205.243.166"
         username: icalbalino
         password: 000i9ifb
-        # key: ${{ secrets.SSH_KEY }}
+        key: ${{ secrets.SSH_KEY }}
         port: 22
         script: |
           git pull origin master
