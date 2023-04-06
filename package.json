@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node src/app.js",
     "stop": "echo 'Stopping server' && taskkill /IM node.exe /F",
+    "stopped": "echo 'Stopping server' && pkill -f 'node src/app.js'",
     "start:dev": "nodemon src/app.js",
     "restart": "npm run stop && timeout /t 120 && npm run start:dev",
     "test": "jest --setupFiles dotenv/config",
