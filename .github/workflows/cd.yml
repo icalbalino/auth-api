@@ -13,9 +13,9 @@ jobs:
     - name: SSH and deploy app
       uses: appleboy/ssh-action@master
       with:
-        host: localhost
-        # username: postgres
-        # password: if0balino
+        host: "github.com,20.205.243.166"
+        username: root
+        password: 000i9ifb
         key: ${{ secrets.SSH_KEY }}
         port: 22
         script: |
