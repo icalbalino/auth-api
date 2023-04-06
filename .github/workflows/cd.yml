@@ -49,6 +49,7 @@ jobs:
           npm run migrate up
           npm run test
           npm run start
+          npm run stop
         env:
           CI: true
           HOST: localhost
