@@ -16,7 +16,7 @@ jobs:
         host: localhost
         username: ubuntu
         key: ${{ secrets.SSH_KEY }}
-        port: 5000
+        port: 5432
         script: |
           git pull origin master
           npm install
