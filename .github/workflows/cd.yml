@@ -40,7 +40,7 @@ jobs:
     - name: SSH and deploy app
       uses: appleboy/ssh-action@master
       with:
-        host: "github.com"
+        host: localhost
         username: ubuntu
         key: ${{ secrets.SSH_KEY }}
         port: 22
