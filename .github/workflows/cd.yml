@@ -40,13 +40,14 @@ jobs:
     - name: SSH and deploy app
       uses: appleboy/ssh-action@master
       with:
-        host: "0.0.0.0"
-        username: ${{ secrets.PGUSER_TEST }}
+        host: "github.com"
+        username: "icalbalino"
         key: ${{ secrets.SSH_KEY }}
-        port: 5432
+        port: 22
         script: |
           cd ~/auth-api
           git pull origin master
           npm install
           npm run migrate up
           npm run restart
+          ls -al
