@@ -43,7 +43,7 @@ jobs:
         host: ${{ secrets.PGHOST_TEST }}
         username: ${{ secrets.PGUSER_TEST }}
         key: ${{ secrets.SSH_KEY }}
-        port: 2${{ secrets.SSH_PORT }}
+        port: 5432
         script: |
           cd ~/auth-api
           git pull origin master
